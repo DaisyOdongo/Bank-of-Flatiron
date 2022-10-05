@@ -2,14 +2,15 @@ import React from "react";
 import Transaction from "./Transaction";
 
 function TransactionsList({transcations, handleDeleteTransactions, handleSort}) {
-      const handleDeletions = async (transactionId) =>{
-        console.log(transactionId);
+  const {id}= transcations    
+  const handleDeletions = async (id) =>{
+        console.log(id);
         try{
-          const response = await fetch("http://localhost:8001/transactions/" + transactionId, {
+          const response = await fetch("http://localhost:8001/transactions/" + id, {
             method: "DELETE",
           });
           
-          handleDeleteTransactions(transactionId);
+          handleDeleteTransactions(id);
         }catch (error){
           console.log(error);
         }
