@@ -7,7 +7,7 @@ function Search(handleSearch) {
         type="text"
         placeholder="Search your Recent Transactions"
         onChange={(event) => {console.log("Searching...");
-        handleSearch(event.target.value)
+        handleSearch(e.target.value)
         }}
       />
       <i className="circular search link icon"></i>
