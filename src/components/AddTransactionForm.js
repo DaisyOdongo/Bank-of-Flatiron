@@ -35,8 +35,8 @@ function AddTransactionForm(handleAddTransaction) {
 			console.log(err);
 		}
 	};
-  const handleDataChange =(event) =>{
-    setFormData({...formData, [event.target.name]:event.tartget.value})
+  const handleDataChange =(e) =>{
+    setFormData({...formData, [e.target.name]:e.tartget.value})
   }
   return (
     <div className="ui segment">
