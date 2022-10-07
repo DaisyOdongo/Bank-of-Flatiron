@@ -13,4 +13,4 @@ function Transaction({transaction, handleDeletions}){
   );
 }
 
-export default Transaction
+export default Transaction;
